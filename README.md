@@ -1,4 +1,3 @@
-# flutter_learn
 # flutter source code learn
 
 # 一、源码配置
@@ -21,3 +20,22 @@ packages
   |-flutter_tools #flutter tool 源码
   |-flutter_web_plugins #flutter web相关代码
 version #flutter sdk版本
+
+flutter/engine的目录（flutter/src/）
+-flutter
+assets #资源读取
+common #公共逻辑
+flow #渲染管道相关逻辑
+flutter_frontend_server #Dart构建相关逻辑
+fml #消息循环相关
+lib #Dart Runtime及渲染和web相关逻辑
+runtime #dart runtime相关逻辑
+shell
+  |-platform
+    |-android #android embedder相关逻辑
+    |-common #embedder 公共逻辑
+sky
+testing #测试相关
+third_party
+
+engine部分c++组成，最终机器码和运行平台与cpu架构强相关，不同平台embedder有所不同。
