@@ -40,8 +40,10 @@ third_party
 
 engine部分c++组成，最终机器码和运行平台与cpu架构强相关，不同平台embedder有所不同。
 构建engine：gn工具目录src/flutter/tools/gn
+<code>
 flutter-engine 依赖 dart-sdk，而 dart-sdk 仅在目标平台为 host 的时候才会编译的，所以我们需要执行多个 gn 命令
-<code>code</code>
+./flutter/tools/gn --unoptimized --no-goma --ios --simulator  
+</code>
 
 
 
